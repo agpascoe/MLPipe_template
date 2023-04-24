@@ -16,3 +16,9 @@ Change the directory name locally according with templates schemas
 2. Activate VDC
 $ dvc init # Check that dvc must be includen in requirements.txt.
 # fast reference at: https://github.com/iterative
+
+# to associate a repo for data in gcp managed by dvc, for example
+$ dvc remote add -d myremote gdrive://10AyMRWPwMf2Bp04t1jIhhyi6mawh3Z #in this case goes to mydrive/data/remote for example
+$ dvc add <files>
+$ dvc add <files> .gitignore
+

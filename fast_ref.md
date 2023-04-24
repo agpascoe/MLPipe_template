@@ -4,3 +4,5 @@ $ git add <files>
 $ git commit -m "message associated to commit"
 $ git push
 
+## To get the status of the sync
+$ git status

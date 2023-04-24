@@ -1,1 +1,10 @@
-#Here goes the requirements, tipycally from pip freeze > requeriments.txt
+# Here goes the requirements, tipycally from pip freeze > requeriments.txt
+# remove comments and/or add new packets below
+#keras
+#tensorflow
+#skitlearn
+#matplotlib
+#pandas
+#pytorch
+#mlflow
+#dvc[all]

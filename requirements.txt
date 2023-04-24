@@ -1,0 +1,1 @@
+#Here goes the requirements, tipycally from pip freeze > requeriments.txt

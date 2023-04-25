@@ -22,3 +22,13 @@ $ dvc remote add -d myremote gdrive://10AyMRWPwMf2Bp04t1jIhhyi6mawh3Z #in this c
 $ dvc add <files>
 $ dvc add <files> .gitignore
 
+$ git add <files>
+$ git commit -m "dvc updating git"
+$ git push
+
+$ dvc push
+
+# to get a file from dvc repo
+$ dvc pull <filename>
+
+

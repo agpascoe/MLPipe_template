@@ -1,0 +1,15 @@
+#Need to verify if the name can be other
+stages:
+  data_AT:
+    cmd: python data_AT.py
+    deps:
+    - data_AT.py
+    outs:
+    - data_files
+  train_eval_save:
+    cmd: python train_eval_save.py
+    deps:
+    - train_eval_save.py
+    - data_files
+    outs:
+    - model_eval

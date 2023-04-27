@@ -1,4 +1,16 @@
 # This is a brief gudie to me most used commands in this di-factory:pipeline management
+
+## About  cookiecutter
+* conda config --add channels conda-forge
+  * to add channel to conda-forge
+* conda install -c conda-forge cookiecutter
+  * to install cookiecutter
+* cookiecutter < repo_name >
+  * to create a new project
+* cookiecutter github.com/khuyentran/data-science-templates
+  * to create a new template for data science project
+
+
 ## About GitHub
 ### Update local changes to github repo
 * git add <files>

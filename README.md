@@ -18,7 +18,8 @@ Template for di-factory Pipeline
 
 ## Contents:
 ### 0. General Considerations
-* Use anaconda as a local environment
+* Used cookiecutter as a template maker for the di-factory:pipeline dir structure
+* Anaconda as a local environment
 * Use jupyter notebooks as a local tool for data exploration and modeling at first steps
 * Use mlflow as tool for model tracking
 * Use DVC as tool for data and model versioning

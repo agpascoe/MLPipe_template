@@ -13,3 +13,6 @@ stages:
     - data_files
     outs:
     - model_eval
+    metrics:
+    - metrics.json:
+        cache: false

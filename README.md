@@ -7,7 +7,12 @@ Steps:
 4. Preprocessing
 5. Feature engineering
 6. Training
-7. Evaluation
+7. Model Evaluation
+8. CD Automation (4..7)
+9. Experiments evaluation
+10. CI Automation (3..9)
+11. Deployment
+12. Model updating for new data
 
 1. Clone repository
 $ git clone https://github.com/MLPipe_template.git
@@ -29,6 +34,22 @@ $ git push
 $ dvc push
 
 # to get a file from dvc repo
-$ dvc pull <filename>
+$ dvc pull <filename> #the filename.dvc file must be present
+
+# to list which files are in DVC
+$ dvc list <route to repo> repo 
+# ejemplo: $ dvc list https://github.com/iterative/dataset-registry get-started
+
+# to access to a particular file
+$ dvc get <route to repo> repo/file
+#or
+$ dvc import <route to repo> repo 
+#here in repo.dvc you will found where you get this repo
+
+#to get the new versio fo a repo/file:
+$ dvc update repo/file.dvc
 
 
+10. CI Automation
+###using DVC
+$ dvc repro #execute dvc.yaml script

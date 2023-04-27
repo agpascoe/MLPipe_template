@@ -14,13 +14,23 @@ Steps:
 11. Deployment
 12. Model updating for new data
 
+0. General Considerations
+* Use anaconda as a local environment
+* Use jupyter notebooks as a local tool for data exploration and modeling at first steps
+* Use mlflow as tool for model tracking
+* Use DVC as tool for data and model versioning
+* Use Git as tool for version control
+* Use Python 3.8 or higher
+
+
 1. Clone repository
 $ git clone https://github.com/MLPipe_template.git
 Change the directory name locally according with templates schemas
 
 2. Activate VDC
-$ dvc init # Check that dvc must be includen in requirements.txt.
-# fast reference at: https://github.com/iterative
+$ dvc init 
+Check that dvc must be includen in requirements.txt.
+fast reference at: https://github.com/iterative
 
 # to associate a repo for data in gcp managed by dvc, for example
 $ dvc remote add -d myremote gdrive://10AyMRWPwMf2Bp04t1jIhhyi6mawh3Z #in this case goes to mydrive/data/remote for example

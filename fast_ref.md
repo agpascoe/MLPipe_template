@@ -68,7 +68,7 @@
 * https://pdoc3.readthedocs.io/
 * `pip install pdoc3`
 * `poetry add pdoc3`
-* `pdoc3 <file.py>`
+* `pdoc --http localhost:8080 <file.py>`
 	
 ## About Hydra
 * It is a configuration management tool, based on yaml files.

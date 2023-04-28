@@ -1,5 +1,54 @@
 # This is a brief gudie to me most used commands in this di-factory:pipeline management
 
+## About PyCaret
+PyCaret is an open-source, low-code machine learning library in Python that automates machine learning workflows.
+https://pycaret.gitbook.io/docs/
+* `pip install --upgrade pycaret`
+* install analysis extras
+	* `pip install pycaret[analysis]`
+* models extras
+	* `pip install pycaret[models]`
+* install tuner extras
+	* `pip install pycaret[tuner]`
+* install mlops extras
+	* `pip install pycaret[mlops]`
+* install parallel extras
+	* `pip install pycaret[parallel]`
+* install test extras
+	* `pip install pycaret[test]`
+* install multiple extras together
+	* `pip install pycaret[analysis,models]`
+
+### Classification OOP API Examples
+* loading sample dataset
+	* `from pycaret.datasets import get_data`
+	* `data = get_data('juice')`
+
+* init setup
+	* `from pycaret.classification import ClassificationExperiment`
+	* `s = ClassificationExperiment()`
+	* `s.setup(data, target = 'Purchase', session_id = 123)`
+
+* model training and selection
+	* `best = s.compare_models()`
+
+* evaluate trained model
+	* `s.evaluate_model(best)`
+
+* predict on hold-out/test set
+	* `pred_holdout = s.predict_model(best)`
+
+* predict on new data
+	* `new_data = data.copy().drop('Purchase', axis = 1)`
+	* `predictions = s.predict_model(best, data = new_data)`
+
+* save model
+	* `s.save_model(best, 'best_pipeline')`
+
+![image](https://user-images.githubusercontent.com/45379312/235204321-d26ebbd3-3522-4cf1-b3bf-4f0f3c558ca0.png)
+
+
+
 ## About pre-commit
 * Git hook scripts are useful for identifying simple issues before submission to code review.
 * https://pre-commit.com/

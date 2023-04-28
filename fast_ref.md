@@ -5,6 +5,11 @@
 * https://pre-commit.com/
 * Use the configuration file to run (exactly) the hook.
 	* `.pre-commit-config.yaml`
+* Steps:
+	* `pre-commit install`
+	* `git add .`
+	* `git commit -m "message"`
+		* Activate pre-commit and run .pre-commit-config.yaml 
 
 * Use, among others the following:
 	* **black**
@@ -53,13 +58,24 @@
 	* `make install`
 * To run the whole makefile    
 	* `make`
+* To generate documentation from docstrings    
+	* `make docs_view`
+	* uses pdoc behind the scenes
+	* other option is to use pdoc3 (without make)
 
+## About pdoc3
+* pdoc3 is a Python library for generating documentation from Python modules.
+* https://pdoc3.readthedocs.io/
+* `pip install pdoc3`
+* `poetry add pdoc3`
+* `pdoc3 <file.py>`
+	
 ## About Hydra
 * It is a configuration management tool, based on yaml files.
-	* `conda install hydra-core`
-	* `poetry add hydra-core`
-	* `pip install hydra-core --upadte`
-	* Quick reference: https://hydra.cc/docs/intro/ 
+* `conda install hydra-core`
+* `poetry add hydra-core`
+* `pip install hydra-core --upadte`
+* Quick reference: https://hydra.cc/docs/intro/ 
 
 
 ## About poetry

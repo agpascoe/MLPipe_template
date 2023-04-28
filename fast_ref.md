@@ -1,5 +1,46 @@
 # This is a brief gudie to me most used commands in this di-factory:pipeline management
 
+## About make
+* Make is a tool which controls the generation of executables and other non-source files of a program from the program's source file
+* Quick reference: https://www.gnu.org/software/make/
+ * uses a makefile file to generate executables
+ * for example:
+  * install:
+   * @echo installin
+   * pip install petry
+   * etc..
+   
+  *   make install
+   * To run the part of install inside the makefile    
+  *   make
+   * To run the whole makefile    
+
+## About Hydra
+* It is a configuration management tool, based on yaml files.
+* conda install hydra-core
+* poetry add hydra-core
+* pip install hydra-core --upadte
+* Quick reference: https://hydra.cc/docs/intro/
+* 
+
+
+## About poetry
+* conda install poetry
+ * poetry is a tool for python code and repository management.
+* poetry install
+ * shows all packages in the current environment and start to update, install, and resolve references
+* poetry add
+ * adds a new package to the current environment
+* poetry remove
+ * removes a package from the current environment
+* poetry show
+ * shows all packages in the current environment
+* poetry show --tree
+ * shows all packages in the current environment and all sub-packages
+* poetry search <query>
+ * searches for packages
+* fast reference: https://python-poetry.org/docs/
+
 ## About  cookiecutter
 * conda config --add channels conda-forge
   * to add channel to conda-forge
@@ -7,8 +48,8 @@
   * to install cookiecutter
 * cookiecutter < repo_name >
   * to create a new project
-* cookiecutter github.com/khuyentran/data-science-templates
-  * to create a new template for data science project
+* cookiecutter https://github.com/khuyentran1401/data-science-template
+  * to create a new template for data science project.. it creates a new directory with the project name you chose.
 
 
 ## About GitHub

@@ -1,44 +1,74 @@
 # This is a brief gudie to me most used commands in this di-factory:pipeline management
 
+## About pre-commit
+* Git hook scripts are useful for identifying simple issues before submission to code review.
+* https://pre-commit.com/
+* use the configuration file to run (exactly) the hook.
+	* .pre-commit-config.yaml
+
+* Use among others the following:
+	* black
+		* Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting.
+		* https://pypi.org/project/black/
+		* pip install black
+		* poetry add black
+		
+	* flake8
+		* Python linting tool that checks Python code for style and syntax errors
+		* https://pypi.org/project/flake8/
+		* pip install flake8
+		* poetry add flake8
+		
+	* isort 
+
+
+
+## About graphviz
+* Graphviz is open source graph visualization software.
+* https://www.graphviz.org/
+* poetry add graphviz
+	* poetry install graphviz
+
+
 ## About make
-* Make is a tool which controls the generation of executables and other non-source files of a program from the program's source file
-* Quick reference: https://www.gnu.org/software/make/
- * uses a makefile file to generate executables
- * for example:
+*	Make is a tool which controls the generation of executables and other non-source files of a program from the program's source file
+*	Quick reference: https://www.gnu.org/software/make/
+	*	uses a makefile file to generate executables
+	*	for example:
   * install:
-   * @echo installin
-   * pip install petry
-   * etc..
+  	* @echo installin
+  	*	pip install petry
+   *	etc..
    
-  *   make install
-   * To run the part of install inside the makefile    
-  *   make
-   * To run the whole makefile    
+		*	make install
+			*	To run the part of install inside the makefile    
+		*	make
+			*	To run the whole makefile    
 
 ## About Hydra
 * It is a configuration management tool, based on yaml files.
-* conda install hydra-core
-* poetry add hydra-core
-* pip install hydra-core --upadte
-* Quick reference: https://hydra.cc/docs/intro/
-* 
+	* conda install hydra-core
+	* poetry add hydra-core
+	* pip install hydra-core --upadte
+	* Quick reference: https://hydra.cc/docs/intro/ 
 
 
 ## About poetry
 * conda install poetry
- * poetry is a tool for python code and repository management.
+	* poetry is a tool for python code and repository management.
+
 * poetry install
- * shows all packages in the current environment and start to update, install, and resolve references
+	* shows all packages in the current environment and start to update, install, and resolve references
 * poetry add
- * adds a new package to the current environment
+	* adds a new package to the current environment
 * poetry remove
- * removes a package from the current environment
+	* removes a package from the current environment
 * poetry show
- * shows all packages in the current environment
+	* shows all packages in the current environment
 * poetry show --tree
- * shows all packages in the current environment and all sub-packages
+	* shows all packages in the current environment and all sub-packages
 * poetry search <query>
- * searches for packages
+ 	* searches for packages
 * fast reference: https://python-poetry.org/docs/
 
 ## About  cookiecutter

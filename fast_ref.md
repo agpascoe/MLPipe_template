@@ -10,24 +10,29 @@
 	* black
 		* Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting.
 		* https://pypi.org/project/black/
-		* pip install black
-		* poetry add black
+		* `pip install black`
+		* `poetry add black`
+		* `black <file.py>`
 		
 	* flake8
 		* Python linting tool that checks Python code for style and syntax errors
 		* https://pypi.org/project/flake8/
-		* pip install flake8
-		* poetry add flake8
+		* `pip install flake8`
+		* `poetry add flake8`
+		* `flake8 <file.py>`
 		
 	* isort 
-
+		* isort is a Python utility / library to sort imports alphabetically, and automatically separated into sections and by type
+		* https://pycqa.github.io/isort/ 
+		* `poetry add isort`
+		* `isort <file.py or route>
 
 
 ## About graphviz
 * Graphviz is open source graph visualization software.
 * https://www.graphviz.org/
 * poetry add graphviz
-	* poetry install graphviz
+	* `poetry install graphviz`
 
 
 ## About make
@@ -35,15 +40,14 @@
 *	Quick reference: https://www.gnu.org/software/make/
 	*	uses a makefile file to generate executables
 	*	for example:
-  * install:
-  	* @echo installin
-  	*	pip install petry
-   *	etc..
+  	* `install:`
+  	* `@echo installin`
+  	* `pip install petry`
    
-		*	make install
-			*	To run the part of install inside the makefile    
-		*	make
-			*	To run the whole makefile    
+*	make install
+	*	To run the part of install inside the makefile    
+*	make
+	*	To run the whole makefile    
 
 ## About Hydra
 * It is a configuration management tool, based on yaml files.

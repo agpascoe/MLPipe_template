@@ -7,25 +7,32 @@
 	* `.pre-commit-config.yaml`
 
 * Use, among others the following:
-	* black
+	* **black**
 		* Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting.
 		* https://pypi.org/project/black/
 		* `pip install black`
 		* `poetry add black`
 		* `black <file.py>`
 		
-	* flake8
+	* **flake8**
 		* Python linting tool that checks Python code for style and syntax errors
 		* https://pypi.org/project/flake8/
 		* `pip install flake8`
 		* `poetry add flake8`
 		* `flake8 <file.py>`
 		
-	* isort 
+	* **isort** 
 		* isort is a Python utility / library to sort imports alphabetically, and automatically separated into sections and by type
 		* https://pycqa.github.io/isort/ 
 		* `poetry add isort`
 		* `isort <file.py or route>`
+	
+	* **iterrogate**
+		* iterrogate is a Python utility / library to generate documentation for Python classes and functions
+		* https://iterrogate.readthedocs.io/en/latest/
+		* `pip install iterrogate`
+		* `poetry add iterrogate`
+		* `iterrogate <file.py>`	
 
 
 ## About graphviz

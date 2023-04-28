@@ -3,7 +3,7 @@
 ## About pre-commit
 * Git hook scripts are useful for identifying simple issues before submission to code review.
 * https://pre-commit.com/
-* use the configuration file to run (exactly) the hook.
+* Use the configuration file to run (exactly) the hook.
 	* `.pre-commit-config.yaml`
 
 * Use, among others the following:
@@ -31,22 +31,21 @@
 ## About graphviz
 * Graphviz is open source graph visualization software.
 * https://www.graphviz.org/
-* poetry add graphviz
-	* `poetry install graphviz`
+* `poetry add graphviz`
+* `pip install graphviz`
 
 
 ## About make
 * Make is a tool which controls the generation of executables and other non-source files of a program from the program's source file
 * Quick reference: https://www.gnu.org/software/make/
-	* uses a makefile file to generate executables
-	* for example:
-  		* `install:`
-  		* `@echo installin`
-  		* `pip install petry`
-* `make install`
-	* To run the part of install inside the makefile    
-* `make`
-	* To run the whole makefile    
+* Uses a <makefile> file to generate executables. For example <makfile>:
+  * `install:`
+  * `@echo installin`
+  * `pip install petry`
+* To run the part of install inside the makefile    
+	* `make install`
+* To run the whole makefile    
+	* `make`
 
 ## About Hydra
 * It is a configuration management tool, based on yaml files.

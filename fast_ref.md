@@ -1,5 +1,19 @@
 # This is a brief gudie to me most used commands in this di-factory:pipeline management
 
+## About pandas-profile
+Pandas-profiling delivers an extended analysis of a DataFrame while alllowing the data analysis to be exported in different formats such as html and json.
+Pandas-profiling is working behind the scenes in pycaret.
+* https://pandas-profile.readthedocs.io/en/latest/
+* `pip install ydata-profiling`
+* `poetry add ypanda-profiling`
+* Inside jupyter:
+	* `from ydata_profiling import ProfileReport`
+	* `df = pd.DataFrame(...)`
+	* `profile = ProfileReport(df, title="put a title")` 
+
+* The example code below loads the explorative configuration file, which includes many features for text analysis (length distribution, word distribution and character/unicode information), files (file size, creation time) and images (dimensions, EXIF information). The exact settings used in this explorative configuration file can be compared with the default configuration file:
+	* `profile = ProfileReport(df, title="any title", explorative=True)`
+
 ## About PyCaret
 PyCaret is an open-source, low-code machine learning library in Python that automates machine learning workflows.
 https://pycaret.gitbook.io/docs/

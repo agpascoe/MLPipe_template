@@ -1,5 +1,10 @@
 # This is a brief gudie to me most used commands in this di-factory:pipeline management
 
+## About to configure AWS-CLI
+* https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+* `curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"`
+
+
 ## About pandas-profile
 Pandas-profiling delivers an extended analysis of a DataFrame while alllowing the data analysis to be exported in different formats such as html and json.
 Pandas-profiling is working behind the scenes in pycaret.
